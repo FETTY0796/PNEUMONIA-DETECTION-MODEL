@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    max-width: 100%;
+}
+
+/* Custom styles based on the prediction result */
+body.Normal {
+    background-color: green;
+    color: white;
+}
+
+body.Pneumonia {
+    background-color: red;
+    color: white;
+}
+
+button {
+    background-color: darkgray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}

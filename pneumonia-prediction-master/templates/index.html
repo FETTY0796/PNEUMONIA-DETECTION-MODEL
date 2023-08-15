@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia Detection App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://cdn.pixabay.com/photo/2017/04/25/22/22/anatomical-2261006_1280.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.6); /* translucent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .file-input input[type="file"] {
+            display: none;
+        }
+
+        .file-input label, button {
+            background-color: #007BFF;
+            color: #ffffff;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s; /* added transform transition */
+        }
+
+        .file-input label:hover, button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05); /* subtle zoom on hover */
+        }
+
+        button {
+            border: none;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Pneumonia Detection App</h1>
+        </header>
+        <main>
+            <form method="post" enctype="multipart/form-data">
+                <div class="file-input">
+                    <input type="file" name="file" accept="image/*" id="file">
+                    <label for="file">Choose an Image</label>
+                </div>
+                <button type="submit">Upload</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
